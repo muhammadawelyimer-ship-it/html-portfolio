@@ -1,40 +1,106 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-<!Doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title> Muhammad's portfolio</title>
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+    .pricing-container{
+      display:flex;
+      height:100vh;
+      /* width:30%; */
+      justify-content:center;
+      align-items: center;
+      gap:2rem;
+
+    }
+  .pricing-plan{
+    max-width:400px;
+    flex:1;
+    background-color:rgb(233, 230, 226);
+      margin-bottom: 20px;
+      border-radius: 5px;
+      padding:30px;
+      text-align:center;
+  }
+  .plan-title{
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow',
+     Arial, sans-serif;
+     font-size: 15px;
+     margin-bottom:10px;
+  }
+  .plan-price{
+    font-weight:bold;
+    font-size:30px;
+    margin-bottom:10px;
+  }
+  .plan-button{
+    background-color: rgb(248, 146, 146);
+    align-items:center;
+    border-radius:5px;
+    justify-content:center;
+    margin-top:20px;
+    border:none; 
+    color:white;
+  }
+  .plan-features{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    
+  }
+  
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction:column;
+        height:100%;
+      }
+       
+    }
+  </style>
 </head>
 
 <body>
-<h1> Muhammad Awel's portfolio</h1>
- <h3> I'm web developer</h3>
- <hr>
-
- <a  href="./movie-ranking.html"> Movie ranking Project</a> <br>
-<img src="./movie-ranking.png " height="200" alt=" movie ranking">
-
-<br>
- <a href="./birthday-invite.html"> Birthday invite project</a> <br>
-<img src="./Birthday-invite.png" height="200" alt=" birthday invite">
-
-<hr>
-<a href="./about.html">  About me</a>
-<a href="./contact.html"> Contact me</a>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
 
 </body>
+
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
