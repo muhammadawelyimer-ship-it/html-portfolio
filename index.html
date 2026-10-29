@@ -1,106 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Flexbox Pricing Table</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Fundamentals</title>
   <style>
     body {
-      font-family: 'Sono', sans-serif;
+      font-family: sans-serif;
     }
-    .pricing-container{
-      display:flex;
-      height:100vh;
-      /* width:30%; */
-      justify-content:center;
-      align-items: center;
-      gap:2rem;
 
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f2f2f2;
     }
-  .pricing-plan{
-    max-width:400px;
-    flex:1;
-    background-color:rgb(233, 230, 226);
-      margin-bottom: 20px;
-      border-radius: 5px;
-      padding:30px;
-      text-align:center;
-  }
-  .plan-title{
-    font-family: 'Franklin Gothic Medium', 
-    'Arial Narrow',
-     Arial, sans-serif;
-     font-size: 15px;
-     margin-bottom:10px;
-  }
-  .plan-price{
-    font-weight:bold;
-    font-size:30px;
-    margin-bottom:10px;
-  }
-  .plan-button{
-    background-color: rgb(248, 146, 146);
-    align-items:center;
-    border-radius:5px;
-    justify-content:center;
-    margin-top:20px;
-    border:none; 
-    color:white;
-  }
-  .plan-features{
-    list-style:none;
-    margin:0px;
-    padding:0px;
-    
-  }
-  
-    /* Hint: What can you do with a media query and flexbox? */
-    @media (max-width: 1250px) {
-      .pricing-container{
-        flex-direction:column;
-        height:100%;
-      }
-       
+
+    .item {
+      width: 200px;
+      margin: 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+      font-size: 24px;
     }
   </style>
 </head>
 
 <body>
-  <div class="pricing-container">
-    <div class="pricing-plan">
-      <div class="plan-title">Basic</div>
-      <div class="plan-price">$9.99/month</div>
-      <ul class="plan-features">
-        <li>✅ 10GB Storage</li>
-        <li>✅ 1 User</li>
-        <li>🚫 Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</a>
-    </div>
-    <div class="pricing-plan">
-      <div class="plan-title">Standard</div>
-      <div class="plan-price">$19.99/month</div>
-      <ul class="plan-features">
-        <li>✅ 50GB Storage</li>
-        <li>✅ 5 Users</li>
-        <li>✅ Phone &amp; Email Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</a>
-    </div>
-    <div class="pricing-plan">
-      <div class="plan-title">Premium</div>
-      <div class="plan-price">$49.99/month</div>
-      <ul class="plan-features">
-        <li>✅ 100GB Storage</li>
-        <li>✅ 10 Users</li>
-        <li>✅ 24/7 Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</a>
-    </div>
-  </div>
+  <div class="container">
+    <h1>Grid Sizing</h1>
+    <a class="item" href="./fixed-size.html">Fixed Size</a>
+    <a class="item" href="./auto-size.html">Auto Size</a>
+    <a class="item" href="./fractional-size.html">Fractional Size</a>
+    <a class="item" href="./minmax-size.html">MinMax Size</a>
+    <a class="item" href="./repeat.html">Repeat</a>
+    <a class="item" href="./test.html">Test</a>
 
+
+  </div>
 </body>
 
 </html>
